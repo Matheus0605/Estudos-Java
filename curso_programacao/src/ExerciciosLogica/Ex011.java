@@ -18,7 +18,7 @@ public class Ex011 {
         System.out.println("Valor de C: ");
         int c = sc.nextInt();
 
-        int delta = (b^2) - 4 *a * c;
+        int delta = b^2 - 4 *a * c;
         System.out.println("O valor de delta é "+ delta);
 
 
