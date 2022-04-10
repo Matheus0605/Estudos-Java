@@ -21,8 +21,10 @@ public class Atribuicao_Acumulativa {
 			}
 			
 			System.out.printf("O valor da conta = R$ %.2f", conta);
+			System.out.println("Positividade!");
 			
 			
 			sc.close();
 		}
 	}
+	//Positividade
