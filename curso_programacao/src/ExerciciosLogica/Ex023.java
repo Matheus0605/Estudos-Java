@@ -15,14 +15,14 @@ public class Ex023 {
             System.out.println("--------------------");
             System.out.println("Digite seu nome: ");
             String nome = sc.nextLine();
-            System.out.println("Qual seu sexo: ");
-            String sexo = sc.next();
+            System.out.println("Qual seu sexo (F/M): ");
+            char sexo = sc.next().charAt(0);
             System.out.println("Qual o valor da comprar: ");
             double compra = sc.nextDouble();
 
-            if (sexo == "Feminino") {
+            if (sexo == 'F' ) {
                 double desc = compra - (compra * 13) / 100;
-                System.out.println("Para homes o desconto é de 13%");
+                System.out.println("Para Mulheres o desconto é de 13%");
                 System.out.printf("O valor de R$%.2f agora fica R$%.2f",compra, desc);
             }
             else {

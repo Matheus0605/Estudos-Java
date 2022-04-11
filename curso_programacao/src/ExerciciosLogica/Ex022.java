@@ -10,23 +10,15 @@ public class Ex022 {
         Locale.setDefault(Locale.US);
         Scanner sc = new Scanner(System.in);
 
-        System.out.println("Qual seu nome: ");
-        String nome = sc.nextLine();
-        System.out.println("Digite seu ano de nascimento: ");
-        int anoNasc = sc.nextInt();
-        System.out.println("Digite o ano atual: ");
-        int anoAtual = sc.nextInt();
-        
-        int idade = anoAtual - anoNasc;
-        if (idade > 18) {
-            int alist = idade - 18;
-            System.out.printf("Olá %s, voce ja tem %d anos e aqui esta.\nO tempo que fez em anos que seu alistamento passou: %d",nome,idade,alist );
+        System.out.println("Digite qualquer ano: ");
+        int ano = sc.nextInt();
+
+        if (ano % 4 == 0 && ano % 100 != 0 || ano % 400 == 0) {
+            System.out.println(ano + " é bissexto");
         }
         else {
-            int alist = 18 - idade;
-            System.out.printf("Olá %s, voce ja tem %d anos e aqui esta.\nO tempo que falta em anos para se alistar: %d",nome,idade,alist );
+            System.out.println(ano + " não é bissexto");
         }
-
 
 
         sc.close();
